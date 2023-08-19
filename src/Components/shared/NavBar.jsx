@@ -5,11 +5,10 @@ import NavBarMenu from "../NavBar/NavBarMenu";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const NavBar = () => {
+const NavBar = ({isChecked, setIsChecked}) => {
 
   const [ t ] = useTranslation('global')
 
-  const [isChecked, setIsChecked] = useState(false);
 
   const onDark = useSelector(reducer => reducer.onDark)
 

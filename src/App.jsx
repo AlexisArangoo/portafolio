@@ -11,6 +11,8 @@ import { useState } from 'react'
 
 function App() {
 
+  const [isChecked, setIsChecked] = useState(false);
+
   const [onLanguage, setOnLanguage] = useState(false)
 
   const [ t, i18n ] = useTranslation('global')
@@ -28,7 +30,10 @@ function App() {
   return (
     <div className='body'>
       
-      <NavBar />
+      <NavBar 
+      isChecked={isChecked}
+      setIsChecked={setIsChecked}
+      />
       
       <div className='container-translate'>
         {
@@ -41,7 +46,7 @@ function App() {
        <Dark />
       </div>
       
-      <div className='container-pages'>
+      <div onClick={() => setIsChecked(false)} className='container-pages'>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='proyects' element={<ProyectosPage />} />
