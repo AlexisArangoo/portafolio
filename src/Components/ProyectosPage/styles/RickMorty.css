@@ -1,0 +1,73 @@
+.rick-morty{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color: #222222;
+    border-radius: 0.4em;
+    overflow: hidden;
+}
+
+.rick-morty img{
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.rick-morty-detalles{
+    width: 100%;
+    padding: 0.7em;
+    text-align: center;
+    border-radius: 0.4em;
+    background-color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.rick-morty-enlace{
+    width: 1.7em;
+    font-size: 1.5rem;
+    padding: 0.1em;
+    color: white;
+    box-shadow: 0 0 0.2em #aaa5;
+    border-radius: 0.2em;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.container-description{
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    background-color: rgba(12, 12, 12, 0.9);
+    transition: top 0.8s ease-in-out;
+}
+
+.container-description.ondescription{
+    top: 0;
+}
+
+.description-list-icon{
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.description-icon{
+    width: 6em;
+    padding: 0.5em;
+    box-shadow: 0 0 0.8em #ccc;
+    border-radius: 0.5em;
+}
+
+

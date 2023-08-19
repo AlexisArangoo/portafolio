@@ -1,0 +1,27 @@
+.certificados{
+    min-height: 100vh;
+    background: url('/public/images/tema-home.jpg') center center fixed;
+    background-size: cover;
+    padding: 3em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.certificados.ondark{
+    background: url('/public/images/tema-dark.jpg') center center fixed;
+}
+
+.fundamentos img{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 0.5em;
+}
+
+.react img{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 0.5em;
+}

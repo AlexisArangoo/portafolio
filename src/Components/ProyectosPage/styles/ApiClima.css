@@ -1,0 +1,42 @@
+.api-clima{
+    position: relative;
+}
+
+.api-clima img{
+    width: 100%; 
+}
+
+.api-clima-title{
+    text-align: center;
+    color: white;
+    text-shadow: 0.2em 0.1em 0.1em rgba(255, 252, 252, 0.333);
+    padding: 0.2em;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.api-clima-detalles{
+    width: 20em;
+    margin-bottom: 0.8em;
+    padding: 0.7em;
+    border-radius: 0.4em;
+    background-color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.api-clima-enlace{
+    width: 1.7em;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.1em;
+    color: white;
+    box-shadow: 0 0 0.5em #aaa5;
+    border-radius: 0.2em;
+}   

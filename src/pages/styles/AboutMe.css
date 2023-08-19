@@ -1,0 +1,74 @@
+.aboutme{
+    min-height: 100vh;
+    background: url('/public/images/tema-home.jpg') center center fixed;
+    background-size: cover;
+    padding: 3em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.aboutme.ondark{
+    background: url('/public/images/tema-dark.jpg') center center fixed;
+    color: black;
+}
+
+.aboutme_container-img{
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5em #fff;
+}
+
+.aboutme_container-img img{
+    object-fit: contain;
+    width: 80px;
+    padding: 0.4em;
+}
+
+.aboutme_container-biografia{
+    width: 100%;
+    max-width: 600px;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: -0.2em 0.5em 2em white;
+}
+
+.aboutme_biografia{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.aboutme_container-contact{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.aboutme_title{
+    color: #f009;
+    padding: 0.2em;
+}
+
+.aboutme_contact{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+}
+
+.aboutme_container-contact:hover .aboutme_title{
+    visibility: hidden;
+}
+
+.aboutme_container-contact:hover .aboutme_contact{
+    visibility: visible;
+}

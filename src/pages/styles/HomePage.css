@@ -1,0 +1,145 @@
+.home{
+    height: 100vh;
+    background: url('/public/images/tema-home.jpg') center center fixed;
+    background-size: cover;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home.ondark{
+    background: url('/public/images/tema-dark.jpg') center center fixed;
+}
+
+.foto-perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto-perfil img{
+    width: 100%;
+    max-width: 400px;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: -0.2em 0.5em 2em white;
+}
+
+.home.ondark .foto-perfil img{
+    background-color: rgba(147, 142, 161, 0.4);
+    box-shadow: -0.2em 0.5em 2em black;
+}
+
+.foto-perfil img:hover{
+    transform: scale(1.1);
+}
+
+.container-bibliografia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bibliografia{
+    position: relative;
+    width: 90%;
+    min-height: 500px;
+    padding: 2em;
+    background-color: rgba(147, 142, 161, 0.4);
+    color: #fff;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+    border-radius: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home.ondark .bibliografia{
+    color: #000;
+}
+
+.bibliografia-title{
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+
+.bibliografia-par{
+    font-size: 1.5em;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.home-container-contacts{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.home-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.home.ondark .home-contact{
+    color: #000;
+}
+
+.bxs-envelope{
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.bxl-linkedin-square{
+    color: rgb(45, 45, 185);
+    font-size: 1.5rem;
+}
+
+.bxl-whatsapp-square{
+    color: rgb(5, 129, 5);
+    font-size: 1.5rem;
+}
+
+.home-title{
+    font-size: 2rem;
+}
+
+.home-title::before{
+    content: '{ ';
+    color: red;
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-title::after{
+    content: ' }';
+    color: red;
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media screen and (max-width: 850px) {
+    .home{
+        grid-template-columns: 100%;
+    }
+
+
+    .foto-perfil img{
+        border-radius: 50%;
+        max-width: 200px;
+    }
+    
+    
+
+}

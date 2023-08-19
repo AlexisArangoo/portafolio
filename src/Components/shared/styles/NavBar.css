@@ -1,0 +1,273 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    box-shadow: 0.2em 0 0.7em #0009;
+    background: linear-gradient( #000, #2a365c);
+    border-radius: 0 0.5em 0.5em 0;
+    overflow: hidden;
+    transition: 400ms ease;
+    z-index: 3;
+}
+
+.header.ondark{
+    background: linear-gradient( #fff, #2a365c);
+}
+
+.header:hover{
+    width: 230px;
+}
+
+
+.header:hover .acerca-de-mi{
+    justify-content: center;
+}
+
+.header-container-img{
+    width: 230px;
+    padding: 0.5em;
+}
+
+
+.container-img{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+}
+
+.container-img img{
+    width: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin: 0.1em;
+}
+
+.container-img span{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.header.ondark .container-img span{
+    color: #000;
+}
+
+.hr{
+    margin-top: 1em;
+    width: 100%;
+}
+
+.header-ul{
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+}
+
+.header-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.item-link{
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+    padding: 0.7em 0em 0.7em 0.9em;
+    font-size: 0.9em;
+    color: #fff;
+    text-decoration: none;
+}
+.header.ondark .item-link{
+    color: #000;
+}
+
+.item-link:hover{
+    background-color: #0005;
+    color: #000;
+}
+
+.header.ondark .item-link:hover{
+    background-color: #0005;
+    color: #fff;
+}
+
+.bx-clipboard,
+.bxs-graduation{
+    font-size: 2.7rem;
+    border-radius: 0.1em;
+    box-shadow: 0 0 0.1em #000000;
+}
+hr{
+    width: 90%;
+}
+
+.acerca-de-mi{
+    position: relative;
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.header.ondark .acerca-de-mi{
+    color: #000;
+}
+
+
+.acerca-de-mi:hover .acerca-de-mi-menu{
+    left: 0;
+}
+
+.bxs-user-badge{
+    font-size: 2.5rem;
+    padding: 0.1em;
+    border-radius: 50%;
+    background-color: #aaa7;
+    box-shadow: 0 0 0.5em #000;
+}
+
+.acerca-de-mi-menu{
+    width: 100%;
+    position: absolute;
+    left: -105%;
+    bottom: 100%;
+    transition: left 0.5s ease-in-out;
+}
+
+.acerca-de-mi-menu-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acerca-de-mi-menu-item{
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    font-weight: 600;
+    box-shadow: 0 0 0.5em #ccc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header.ondark .acerca-de-mi-menu-item{
+    color: #000;
+}
+
+.item-contact{
+    position: relative;
+}
+
+.header-contact{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+}
+
+.item-contact:hover .item-contact-span{
+    visibility: hidden;
+}
+
+.item-contact:hover .header-contact{
+    visibility: visible;
+}
+
+.menu{
+    width: 80%;
+    max-width: 300px;
+    text-align: end;
+    position: absolute;
+    top: 60px;
+    right: -300px;
+    border-radius: 0.5em 0 0 0.5em;
+    background-color: #2a365c;
+    visibility: hidden;
+    z-index: 4;
+    transition: right 0.6s ease-in-out;
+}
+
+.menu.onmenu{
+    right: 0;
+}
+
+
+.menu-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items{
+    padding: 1em;
+    box-shadow: 0 0 0.5em #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header.ondark .menu-items{
+    color: #000;
+}
+
+@media screen and (max-width: 900px) {
+    .header{
+        width: 100%;
+        height: 60px;
+        border-radius: 0;
+        transition: width 0ms ease-in-out;
+        background: linear-gradient(to right, #000, #2a365c);
+        display: flex;
+        justify-content: space-between;
+        overflow: visible;
+    }
+    .header.ondark{
+        background: linear-gradient(to right, #fff, #2a365c);
+    }
+    .header:hover{
+        width: 100%;
+    }
+    .container-img{
+        width: 60px;
+    }
+
+    .container-img span{
+        visibility: hidden;
+    }
+    .hr{
+        visibility: hidden;
+    }
+    .header-ul{
+        visibility: hidden;
+    }
+
+    .acerca-de-mi{
+        visibility: hidden;
+    }
+
+    .container-pages{
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    .switch-button{
+        position: fixed;
+        top: 0.8em;
+        right: 4em;
+    }
+    .menu{
+        visibility: visible;
+    }
+
+}

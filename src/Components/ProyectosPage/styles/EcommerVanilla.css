@@ -1,0 +1,12 @@
+.ecommervanilla{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-color:#ff0141;
+    border-radius: 0.4em;
+    overflow: hidden;
+}
+
+.ecommervanilla img{
+    width: 100%;
+}
