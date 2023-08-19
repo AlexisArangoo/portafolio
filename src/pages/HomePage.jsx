@@ -3,11 +3,14 @@ import Dark from "../Components/shared/Dark";
 import "./styles/HomePage.css";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next'
 
 const HomePage = () => {
+  const [ t, i18n ] = useTranslation('global')
+
   const onDark = useSelector((reducer) => reducer.onDark);
 
-  const texts = ["Alexis Arango", "Full Stack"];
+  const texts = [t('translation.alexis-arango'), t("translation.full-stack")];
 
   const email = "alexisamalfi@hotmail.com";
 
@@ -27,9 +30,9 @@ const HomePage = () => {
       <div className="container-bibliografia">
         <div className="bibliografia">
           <div>
-            <h2 className="home-title">
+            <h1 className="home-title notranslate">
               <Typewriter words={texts} loop={true} />
-            </h2>
+            </h1>
 
             <p className="bibliografia-par">{text}</p>
           </div>

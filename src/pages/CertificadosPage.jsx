@@ -13,7 +13,7 @@ const CertificadosPage = () => {
       </section>
       
       <section className="react">
-        <h2>REACT</h2>
+        <h2 className='notranslate'>REACT</h2>
         <img src="/certificados/react.png" alt="" />
       </section>
     </article>
