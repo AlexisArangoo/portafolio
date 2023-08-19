@@ -26,6 +26,8 @@ const ApiClima = ({setOnInterval}) => {
               <li className='description-icon'><img className='img-react' src="/images/icon_react.svg" alt="" /></li>
               <li className='description-icon'><img className='img-css' src="/images/icon_css.svg" alt="" /></li>
             </ul>
+
+            <p className='description'>On this page you can search for the weather of almost any part of the world with the name of the city, when you start the session it will indicate the weather of your location, this page was developed with React and Css.</p>
           </div>
           
         </section>

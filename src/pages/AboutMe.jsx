@@ -21,7 +21,7 @@ const AboutMe = () => {
             </Link>
 
             <p className="aboutme_biografia">
-            Me enorgullece decir que: soy un desarrolador web, el gusto por este mundo tan amplio surgio empiricamente, con el pasar de los años me fui informando buscando cursos y con mis recursos fui creciendo mas en mi vida estudiantil, conte con la oportunidad de poder estudiar en ACADEMLO que ha sido parte fundamental en mi crecimiento como persona y en mi formacion laboral; aunque soy un desarrollador FULL STACK y me desempeño muy bien en ambos campos con todas mis habilidades, me inclino mas por el BACK END.
+             I am proud to say that: I am a web developer, the taste for this wide world arose empirically, as the years went by I found myself looking for courses and with my resources I grew more in my student life, I had the opportunity to study at ACADEMLO, which has been a fundamental part of my growth as a person and in my job training; Although I am a FULL STACK developer and I perform very well in both fields with all my skills, I lean more towards the BACK END.
             </p>
 
             <div className='aboutme_container-contact'>

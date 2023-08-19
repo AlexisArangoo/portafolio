@@ -25,6 +25,7 @@ const EcommerVanilla = ({setOnInterval}) => {
               <li className='description-icon'><img className='img-css' src="/images/icon_css.svg" alt="" /></li>
             </ul>
             
+            <p className='description'>This is an e-commerce that was developed in vanilla ( pure code: Html, Css, js ) the page is fully functional, you can access the shopping cart, apply discount codes and search for the product by name.</p>
         </div>
     </section>
   )
