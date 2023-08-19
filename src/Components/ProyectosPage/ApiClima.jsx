@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './styles/ApiClima.css'
+import { useTranslation } from 'react-i18next'
 const ApiClima = ({setOnInterval}) => {
+
+  const [ t ] = useTranslation('global')
 
   const [ondescription, setOndescription] = useState(false)
 
@@ -17,7 +20,7 @@ const ApiClima = ({setOnInterval}) => {
           <h2 className='api-clima-title'>Climate</h2>
           
           <div className='footer'>
-          <a className='rick-morty-detalles' href="https://api-clima-phi.vercel.app/" target='_blank'>See Demo</a>
+          <a className='rick-morty-detalles' href="https://api-clima-phi.vercel.app/" target='_blank'>{t('translation.demo')}</a>
           <button onClick={handleTwoFuction} className='rick-morty-enlace'><i className='bx bx-menu'></i></button>
           </div>
 
@@ -27,7 +30,7 @@ const ApiClima = ({setOnInterval}) => {
               <li className='description-icon'><img className='img-css' src="/images/icon_css.svg" alt="" /></li>
             </ul>
 
-            <p className='description'>On this page you can search for the weather of almost any part of the world with the name of the city, when you start the session it will indicate the weather of your location, this page was developed with React and Css.</p>
+            <p className='description'>{t('translation.description-clima')}</p>
           </div>
           
         </section>

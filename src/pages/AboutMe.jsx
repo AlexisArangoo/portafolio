@@ -1,8 +1,11 @@
 import { useSelector } from 'react-redux'
 import './styles/AboutMe.css'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
+
+  const [ t ] = useTranslation('global')
 
   const onDark = useSelector(reducer => reducer.onDark)
 
@@ -21,12 +24,12 @@ const AboutMe = () => {
             </Link>
 
             <p className="aboutme_biografia">
-             I am proud to say that: I am a web developer, the taste for this wide world arose empirically, as the years went by I found myself looking for courses and with my resources I grew more in my student life, I had the opportunity to study at ACADEMLO, which has been a fundamental part of my growth as a person and in my job training; Although I am a FULL STACK developer and I perform very well in both fields with all my skills, I lean more towards the BACK END.
+            {t('translation.aboutme-biografia')}
             </p>
 
             <div className='aboutme_container-contact'>
               <hr />
-                <h2 className='aboutme_title'>Let's Talk</h2>
+                <h2 className='aboutme_title'>{t('translation.lets-talk')}</h2>
                 <div className="aboutme_contact">
                 <a href={`mailto:${email}`}>
                   <i className="bx bxs-envelope"></i>

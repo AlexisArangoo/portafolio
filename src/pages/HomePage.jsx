@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next'
 
 const HomePage = () => {
-  const [ t, i18n ] = useTranslation('global')
+  const [ t ] = useTranslation('global')
 
   const onDark = useSelector((reducer) => reducer.onDark);
 
@@ -17,8 +17,6 @@ const HomePage = () => {
   const message =
     "¡Hola! 👋 Estoy visitando tu increíble portafolio de desarrollo web y me gustaría hablar contigo sobre tus proyectos y habilidades. ¿Podemos conversar más sobre cómo trabajas y las oportunidades de colaboración?";
 
-  const text =
-    '"Greetings! I am a web developer dedicated to turning concepts into digital realities. My passion lies in creating functional and engaging websites that leave a lasting impression. Browse my portfolio to see how I combine code and design to build memorable online experiences."';
 
   return (
     <div className={`home ${onDark ? "ondark" : ""}`}>
@@ -34,7 +32,7 @@ const HomePage = () => {
               <Typewriter words={texts} loop={true} />
             </h1>
 
-            <p className="bibliografia-par">{text}</p>
+            <p className="bibliografia-par">{t('translation.bibliografia-par')}</p>
           </div>
 
           <div className="home-container-contacts">

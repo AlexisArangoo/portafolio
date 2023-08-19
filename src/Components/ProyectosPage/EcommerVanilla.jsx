@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import './styles/EcommerVanilla.css'
+import { useTranslation } from 'react-i18next'
 
 const EcommerVanilla = ({setOnInterval}) => {
+
+  const [ t ] = useTranslation('global')
 
   const [ondescription, setOndescription] = useState(false)
 
@@ -12,9 +15,10 @@ const EcommerVanilla = ({setOnInterval}) => {
 
   return (
     <section className="ecommervanilla">
-        <img src="/images/academlo.png" alt="" />
+        <img className='ecommervanilla-img' src="/images/academlo.png" alt="" />
+        <h2 className='api-clima-title'>Ecommerce Vanilla</h2>
         <div className='footer'>
-          <a className='rick-morty-detalles' href="https://nimble-pudding-e9e451.netlify.app/" target='_blank'>See Demo</a>
+          <a className='rick-morty-detalles' href="https://nimble-pudding-e9e451.netlify.app/" target='_blank'>{t('translation.demo')}</a>
           <button onClick={handleTwoFuction} className='rick-morty-enlace'><i className='bx bx-menu'></i></button>
         </div>
 
@@ -25,7 +29,7 @@ const EcommerVanilla = ({setOnInterval}) => {
               <li className='description-icon'><img className='img-css' src="/images/icon_css.svg" alt="" /></li>
             </ul>
             
-            <p className='description'>This is an e-commerce that was developed in vanilla ( pure code: Html, Css, js ) the page is fully functional, you can access the shopping cart, apply discount codes and search for the product by name.</p>
+            <p className='description'>{t('translation.description-ecommerce')}</p>
         </div>
     </section>
   )

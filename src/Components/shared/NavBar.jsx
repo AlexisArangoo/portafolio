@@ -3,8 +3,11 @@ import "./styles/NavBar.css";
 import { useSelector } from "react-redux";
 import NavBarMenu from "../NavBar/NavBarMenu";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
+
+  const [ t ] = useTranslation('global')
 
   const [isChecked, setIsChecked] = useState(false);
 
@@ -21,7 +24,7 @@ const NavBar = () => {
       <div className="header-container-img">
         <Link to="/" className="container-img">
           <img src={`/images/logo_${onDark ? 'black' : 'white'}.png`} alt="" />
-          <span>Home</span>
+          <span>{t('translation.home')}</span>
         </Link>
         <hr className="hr" />
       </div>
@@ -30,13 +33,13 @@ const NavBar = () => {
           <li className="header-item">
             <Link to="/proyects" className="item-link">
               <i className="bx bx-clipboard"></i>
-              <h2>Projects</h2>
+              <h2>{t('translation.projects')}</h2>
             </Link>
           </li>
           <li className="header-item">
             <Link to="/certificates" className="item-link">
               <i className="bx bxs-graduation"></i>
-              <h2>Certificates</h2>
+              <h2>{t('translation.certificates')}</h2>
             </Link>
           </li>
         </ul>
@@ -45,9 +48,9 @@ const NavBar = () => {
         <i className="bx bxs-user-badge"></i>
         <div className="acerca-de-mi-menu">
           <ul className="acerca-de-mi-menu-list">
-            <Link className="acerca-de-mi-menu-item" to='/about-me'><li>About me</li></Link>
+            <Link className="acerca-de-mi-menu-item" to='/about-me'><li>{t('translation.about-me')}</li></Link>
             <li className="acerca-de-mi-menu-item item-contact">
-              <span className="item-contact-span">Contact</span>
+              <span className="item-contact-span">{t('translation.contact')}</span>
               <div className="header-contact">
                 <a href={`mailto:${email}`}>
                   <i className="bx bxs-envelope"></i>
@@ -80,12 +83,12 @@ const NavBar = () => {
       />
       <div className={`menu ${isChecked ? 'onmenu' : ''}`}>
         <ul className="menu-list">
-          <Link to='/'><li className="menu-items">Home</li></Link>
-          <Link to='/proyects'><li className="menu-items">Proyects</li></Link>
-          <Link to='/certificates'><li className="menu-items">Certificates</li></Link>
-          <Link to='/about-me'><li className="menu-items">About Me</li></Link>
+          <Link to='/'><li className="menu-items">{t('translation.home')}</li></Link>
+          <Link to='/proyects'><li className="menu-items">{t('translation.projects')}</li></Link>
+          <Link to='/certificates'><li className="menu-items">{t('translation.certificates')}</li></Link>
+          <Link to='/about-me'><li className="menu-items">{t('translation.about-me')}</li></Link>
           <li className="menu-items item-contact">
-            <span className="item-contact-span">Contact</span>
+            <span className="item-contact-span">{t('translation.contact')}</span>
             <div className="header-contact">
                 <a href={`mailto:${email}`}>
                   <i className="bx bxs-envelope"></i>

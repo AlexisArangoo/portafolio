@@ -1,6 +1,24 @@
 {
     "translation": {
         "alexis-arango": "Alexis Arango",
-        "full-stack": "Full Stack"
+        "full-stack": "Full Stack",
+        "bibliografia-par": " 'Greetings! I am a web developer dedicated to turning concepts into digital realities. My passion lies in creating functional and engaging websites that leave a lasting impression. Browse my portfolio to see how I combine code and design to build memorable online experiences.'",
+
+
+        "proyectos-par": "These are some of the projects in which I have worked with passion and dedication. Throughout my career as a web developer, I have had the opportunity to take on exciting challenges and create innovative solutions. Each project has been an opportunity to grow, learn and improve my skills.",
+        "description-ecommerce": "This is an e-commerce that was developed in vanilla ( pure code: Html, Css, js ) the page is fully functional, you can access the shopping cart, apply discount codes and search for the product by name.",
+        "description-rick": "This page contains the residents of the Ryck and Morty series, in this we can search for them with the ID of their locality or with the name of their locality, this page was developed with React and Css, all the cards are functional and this is the total description of their respective resident.",
+        "description-clima": "On this page you can search for the weather of almost any part of the world with the name of the city, when you start the session it will indicate the weather of your location, this page was developed with React and Css.",
+        "demo": "See Demo",
+
+        "home": "Home",
+        "projects": "Projects",
+        "certificates": "Certificates",
+        "about-me": "About Me",
+        "contact": "Contact",
+
+
+        "aboutme-biografia": "I am proud to say that: I am a web developer, the taste for this wide world arose empirically, as the years went by I found myself looking for courses and with my resources I grew more in my student life, I had the opportunity to study at ACADEMLO, which has been a fundamental part of my growth as a person and in my job training; Although I am a FULL STACK developer and I perform very well in both fields with all my skills, I lean more towards the BACK END.",
+        "lets-talk": "Let's Talk"
     }
 }

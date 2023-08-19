@@ -4,9 +4,12 @@ import EcommerVanilla from '../Components/ProyectosPage/EcommerVanilla'
 import ApiClima from '../Components/ProyectosPage/ApiClima'
 import RickMorty from '../Components/ProyectosPage/RickMorty'
 import { useSelector } from 'react-redux'
+import { useTranslation } from 'react-i18next'
 
 
 const ProyectosPage = () => {
+
+  const [ t ] = useTranslation('global')
 
   const onDark = useSelector(reducer => reducer.onDark)
 
@@ -50,7 +53,7 @@ const ProyectosPage = () => {
     <div className={`container-proyectos ${onDark ? 'ondark' : ''}`}>
   
       <div className='proyectos-par'>
-        <p>These are some of the projects in which I have worked with passion and dedication. Throughout my career as a web developer, I have had the opportunity to take on exciting challenges and create innovative solutions. Each project has been an opportunity to grow, learn and improve my skills.</p>
+        <p>{t('translation.proyectos-par')}</p>
       </div>
       <div className='cont-proyectos'>
       <article className='proyectos'>
