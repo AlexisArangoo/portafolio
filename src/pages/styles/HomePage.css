@@ -150,12 +150,10 @@
     }
 
     .home-title::before{
-        content: '{ ';
         font-size: 2rem;
     }
     
     .home-title::after{
-        content: ' }';
         font-size: 2rem;
     }
 

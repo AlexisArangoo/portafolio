@@ -5,6 +5,7 @@ import ApiClima from '../Components/ProyectosPage/ApiClima'
 import RickMorty from '../Components/ProyectosPage/RickMorty'
 import { useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
+import Pokemon from '../Components/ProyectosPage/Pokemon'
 
 
 const ProyectosPage = () => {
@@ -31,14 +32,14 @@ const ProyectosPage = () => {
     if (currentPro > 1) {
       setCurrentPro( currentPro - 1)
     }else (
-      setCurrentPro(3)
+      setCurrentPro(4)
     )
 
     setOnInterval(false)
    }
 
   const handleNext = () => { 
-    if (currentPro < 3) {
+    if (currentPro < 4) {
       setCurrentPro(currentPro + 1)
     } else (
       setCurrentPro(1)
@@ -58,23 +59,20 @@ const ProyectosPage = () => {
       <div className='cont-proyectos'>
       <article className='proyectos'>
 
-        {
-          currentPro === 1
-          ?(<EcommerVanilla 
+        
+          {currentPro === 1 ? <Pokemon setOnInterval={setOnInterval}/> : null}
+          
+          {currentPro === 2 ?<RickMorty setOnInterval={setOnInterval}/> : null}
+          
+          {currentPro === 3 ?<ApiClima setOnInterval={setOnInterval}/> : null}
+          
+          {currentPro === 4
+            ?<EcommerVanilla 
             setOnInterval={setOnInterval}
             handlePrevious={handlePrevious}
-            />)   
-
-          :currentPro === 2
-
-          ?(<ApiClima setOnInterval={setOnInterval}/>)
+            /> : null}
           
-          :currentPro === 3
-          
-          ?(<RickMorty setOnInterval={setOnInterval}/>)
-
-          :('')
-        }
+       
 
         <div className='container-btn'>
           <button onClick={handlePrevious} className='btn-right'><i className='bx bx-arrow-from-right' ></i></button>

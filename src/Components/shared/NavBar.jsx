@@ -43,7 +43,7 @@ const NavBar = ({isChecked, setIsChecked}) => {
           </li>
           <li className="header-item">
             <div className="item-link cv">
-              <i class='bx bx-archive-in'></i>
+              <i className='bx bx-archive-in'></i>
               <div className="item-link-curriculum notranslate">
                 <div className="item-link-btn"><a href="https://drive.google.com/file/d/1IrKx0Ihq9EtVy8TdY3A9IdtSBIFlSaCC/view?usp=drive_link" target="_blank">Es</a><a href="https://drive.google.com/file/d/1VasOrXaXFfuhcg17YYS-4bwQovwjMrhq/view?usp=drive_link" target="_back">En</a></div>
                 <div className="item-link-cv">{t('translation.curriculum')}</div>

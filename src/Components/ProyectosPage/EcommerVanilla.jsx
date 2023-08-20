@@ -24,9 +24,9 @@ const EcommerVanilla = ({setOnInterval}) => {
 
         <div className={`container-description ${ondescription ? 'ondescription' : ''}`}>
             <ul className='description-list-icon'>
-              <li className='description-icon'><img className='img-html' src="/images/icon_html.svg" alt="" /></li>
-              <li className='description-icon'><img className='img-js' src="/images/icon_js.svg" alt="" /></li>
-              <li className='description-icon'><img className='img-css' src="/images/icon_css.svg" alt="" /></li>
+              <li className='description-icon icon_html'><img className='img-html' src="/images/icon_html.svg" alt="" /></li>
+              <li className='description-icon icon_js'><img className='img-js' src="/images/icon_js.svg" alt="" /></li>
+              <li className='description-icon icon_css'><img className='img-css' src="/images/icon_css.svg" alt="" /></li>
             </ul>
             
             <p className='description'>{t('translation.description-ecommerce')}</p>

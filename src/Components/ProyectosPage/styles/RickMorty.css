@@ -75,4 +75,17 @@
     color: #fff;
 }
 
+.icon_css{
+    box-shadow: 0 0 0.8em #264de4;
+}
+.icon_html{
+    box-shadow: 0 0 0.8em #e44d26;
+}
+.icon_js{
+    box-shadow: 0 0 0.8em #f5de19;
+}
+.icon_react{
+    box-shadow: 0 0 0.8em #00d8ff;
+}
+
 

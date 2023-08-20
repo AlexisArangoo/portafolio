@@ -29,7 +29,7 @@ const HomePage = () => {
         <div className="bibliografia">
           <div>
             <h1 className="home-title notranslate">
-              <Typewriter words={texts} loop={true} />
+              <Typewriter words={texts} loop={true} typeSpeed={40}/>
             </h1>
 
             <p className="bibliografia-par">{t('translation.bibliografia-par')}</p>

@@ -1,0 +1,9 @@
+.pokemon{
+    background-color: #020203;
+}
+
+.pokemon_img{
+    width: 100%;
+    object-fit: fill;
+    height: 345px;
+}
