@@ -44,9 +44,9 @@ const NavBar = ({isChecked, setIsChecked}) => {
           <li className="header-item">
             <div className="item-link cv">
               <i class='bx bx-archive-in'></i>
-              <div className="item-link-curriculum">
+              <div className="item-link-curriculum notranslate">
                 <div className="item-link-btn"><a href="https://drive.google.com/file/d/1IrKx0Ihq9EtVy8TdY3A9IdtSBIFlSaCC/view?usp=drive_link" target="_blank">Es</a><a href="https://drive.google.com/file/d/1VasOrXaXFfuhcg17YYS-4bwQovwjMrhq/view?usp=drive_link" target="_back">En</a></div>
-                <div className="item-link-cv">Curriculum</div>
+                <div className="item-link-cv">{t('translation.curriculum')}</div>
               </div>
             </div>
           </li>
@@ -95,9 +95,9 @@ const NavBar = ({isChecked, setIsChecked}) => {
           <Link to='/proyects'><li className="menu-items">{t('translation.projects')}</li></Link>
           <Link to='/certificates'><li className="menu-items">{t('translation.certificates')}</li></Link>
           <Link to='/about-me'><li className="menu-items">{t('translation.about-me')}</li></Link>
-          <li className="menu-items cv">
+          <li className="menu-items cv notranslate">
               <div className="item-link-btn-menu"><a href="https://drive.google.com/file/d/1IrKx0Ihq9EtVy8TdY3A9IdtSBIFlSaCC/view?usp=drive_link" target="_blank">Es</a><a href="https://drive.google.com/file/d/1VasOrXaXFfuhcg17YYS-4bwQovwjMrhq/view?usp=drive_link" target="_back">En</a></div>
-              <div className="item-link-cv-menu">Curriculum</div>
+              <div className="item-link-cv-menu">{t('translation.curriculum')}</div>
           </li>
           <li className="menu-items item-contact">
             <span className="item-contact-span">{t('translation.contact')}</span>
