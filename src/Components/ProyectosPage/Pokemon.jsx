@@ -16,7 +16,7 @@ const Pokemon = ({setOnInterval}) => {
     <section className="rick-morty pokemon">
       <img className="pokemon_img" src="/images/pokemon.png" alt="" />
       
-      <h2 className='api-clima-title'>Ecommerce Vanilla</h2>
+      <h2 className='api-clima-title'>Pokemon</h2>
     
     <div className='footer'>
       <a className='rick-morty-detalles' href="https://pokemon-seven-green.vercel.app/" target='_blank'>{t('translation.demo')}</a>
