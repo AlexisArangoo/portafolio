@@ -119,3 +119,10 @@
     transition-duration: .5s;
     transform: rotate(180deg);
   }
+
+
+  @media screen and (max-width: 370px) {
+    .container-toogle{
+      position: absolute;
+    }
+  }
