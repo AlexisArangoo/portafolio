@@ -96,7 +96,7 @@ const NavBar = ({isChecked, setIsChecked}) => {
           <Link to='/certificates'><li className="menu-items">{t('translation.certificates')}</li></Link>
           <Link to='/about-me'><li className="menu-items">{t('translation.about-me')}</li></Link>
           <li className="menu-items cv notranslate">
-              <div className="item-link-btn-menu"><a href="https://drive.google.com/file/d/1Hx_BCott-nk_QLFOBOh375tFQFeL_i69/view?usp=sharing" target="_blank">Es</a><a href="https://drive.google.com/file/d/13HeCimxbbUjyzMg9z0c6dIxE5ob3IplY/view?usp=sharing" target="_back">En</a></div>
+              <div className="item-link-btn-menu"><a href="https://drive.google.com/file/d/1Hx_BCott-nk_QLFOBOh375tFQFeL_i69/view?usp=sharing" target="_blank">Es</a><a href="https://drive.google.com/file/d/1ab3cC-TSm-xnWbTgAQ0FB9VvKR6VSZ5a/view?usp=sharing" target="_back">En</a></div>
               <div className="item-link-cv-menu">{t('translation.curriculum')}</div>
           </li>
           <li className="menu-items item-contact">
