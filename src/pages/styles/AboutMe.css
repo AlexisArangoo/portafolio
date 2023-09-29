@@ -37,11 +37,16 @@
     box-shadow: -0.2em 0.5em 2em white;
 }
 
+.aboutme.ondark .aboutme_container-biografia{
+    background-color: #aaa9;
+}
+
 .aboutme_biografia{
     text-align: center;
     font-size: 1.3rem;
     font-weight: 500;
 }
+
 
 .aboutme_container-contact{
     position: relative;

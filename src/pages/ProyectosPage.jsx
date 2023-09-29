@@ -17,16 +17,17 @@ const ProyectosPage = () => {
   const [currentPro, setCurrentPro] = useState(1)
 
   const [onInterval, setOnInterval] = useState(true)
+  const [onCard, setOnCard] = useState(false)
 
   useEffect(() => {
-    if (onInterval) {
+    if (onInterval && !onCard) {
       const interval = setInterval(handleNext, 1500);
 
     return () => {
       clearInterval(interval);
     };
     }
-  }, [currentPro]);
+  }, [currentPro, onCard]);
 
   const handlePrevious = () => { 
     if (currentPro > 1) {
@@ -51,13 +52,13 @@ const ProyectosPage = () => {
     setOnInterval(false)
   }
   return (
-    <div className={`container-proyectos ${onDark ? 'ondark' : ''}`}>
+    <div className={`container-proyectos ${onDark ? 'ondark' : ''}`} >
   
       <div className='proyectos-par'>
         <p>{t('translation.proyectos-par')}</p>
       </div>
       <div className='cont-proyectos'>
-      <article className='proyectos'>
+      <article className='proyectos' onMouseEnter={() => {setOnCard(true); setOnInterval(false)}} onMouseLeave={() => {setOnCard(false); setOnInterval(true)}}>
 
         
           {currentPro === 1 ? <Pokemon setOnInterval={setOnInterval}/> : null}
