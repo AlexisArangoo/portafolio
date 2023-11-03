@@ -3,20 +3,19 @@ import Dark from "../Components/shared/Dark";
 import "./styles/HomePage.css";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
-  const [ t ] = useTranslation('global')
+  const [t] = useTranslation("global");
 
   const onDark = useSelector((reducer) => reducer.onDark);
 
-  const texts = [t('translation.alexis-arango'), t("translation.full-stack")];
+  const texts = [t("translation.alexis-arango"), t("translation.full-stack")];
 
   const email = "alexisamalfi@hotmail.com";
 
   const message =
     "¡Hola! 👋 Estoy visitando tu increíble portafolio de desarrollo web y me gustaría hablar contigo sobre tus proyectos y habilidades. ¿Podemos conversar más sobre cómo trabajas y las oportunidades de colaboración?";
-
 
   return (
     <div className={`home ${onDark ? "ondark" : ""}`}>
@@ -29,10 +28,12 @@ const HomePage = () => {
         <div className="bibliografia">
           <div>
             <h1 className="home-title notranslate">
-              <Typewriter words={texts} loop={true} typeSpeed={40}/>
+              <Typewriter words={texts} loop={true} typeSpeed={40} />
             </h1>
 
-            <p className="bibliografia-par">{t('translation.bibliografia-par')}</p>
+            <p className="bibliografia-par">
+              {t("translation.bibliografia-par")}
+            </p>
           </div>
 
           <div className="home-container-contacts">
