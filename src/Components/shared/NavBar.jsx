@@ -30,7 +30,7 @@ const NavBar = ({isChecked, setIsChecked}) => {
       <div className="header-ul">
         <ul className="header-list">
           <li className="header-item">
-            <Link to="/proyects" className="item-link">
+            <Link to="/projects" className="item-link">
               <i className="bx bx-clipboard"></i>
               <h2>{t('translation.projects')}</h2>
             </Link>
@@ -39,6 +39,12 @@ const NavBar = ({isChecked, setIsChecked}) => {
             <Link to="/certificates" className="item-link">
               <i className="bx bxs-graduation"></i>
               <h2>{t('translation.certificates')}</h2>
+            </Link>
+          </li>
+          <li className="header-item">
+            <Link to="/contact-us" className="item-link">
+              <i className='bx bxs-book-content'></i>
+              <h2>{t('translation.contactus')}</h2>
             </Link>
           </li>
           <li className="header-item">

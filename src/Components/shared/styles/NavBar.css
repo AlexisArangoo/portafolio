@@ -166,7 +166,8 @@
 
 .bx-clipboard,
 .bxs-graduation,
-.bx-archive-in{
+.bx-archive-in,
+.bxs-book-content{
     font-size: 2.7rem;
     border-radius: 0.1em;
     box-shadow: 0 0 0.1em #000000;
@@ -193,6 +194,7 @@ hr{
     left: 0;
 }
 
+
 .bxs-user-badge{
     font-size: 2.5rem;
     padding: 0.1em;
@@ -207,7 +209,20 @@ hr{
     left: -105%;
     bottom: 100%;
     transition: left 0.5s ease-in-out;
+    background: linear-gradient(to right, #000, #2a365c);
 }
+
+.acerca-de-mi:hover .bxs-envelope{
+    color: #fff;
+}
+.header.ondark .acerca-de-mi:hover .bxs-envelope{
+    color: #000;
+}
+
+.header.ondark .acerca-de-mi-menu{
+    background: linear-gradient(to right, #fff, #2a365c);
+}
+
 
 .acerca-de-mi-menu-list{
     display: flex;

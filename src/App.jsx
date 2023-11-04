@@ -8,6 +8,7 @@ import NavBar from './Components/shared/NavBar'
 import AboutMe from './pages/AboutMe'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
+import ContactUs from './pages/ContactUs'
 
 function App() {
 
@@ -49,8 +50,9 @@ function App() {
       <div onClick={() => setIsChecked(false)} className='container-pages'>
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='proyects' element={<ProyectosPage />} />
+          <Route path='projects' element={<ProyectosPage />} />
           <Route path='certificates' element={<CertificadosPage />} />
+          <Route path='contact-us' element={<ContactUs />} />
           <Route path='about-me' element={<AboutMe />} />
         </Routes>
       </div>
