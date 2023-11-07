@@ -98,9 +98,10 @@ const NavBar = ({isChecked, setIsChecked}) => {
       <div className={`menu ${isChecked ? 'onmenu' : ''}`}>
         <ul className="menu-list">
           <Link to='/'><li className="menu-items">{t('translation.home')}</li></Link>
-          <Link to='/proyects'><li className="menu-items">{t('translation.projects')}</li></Link>
+          <Link to='/projects'><li className="menu-items">{t('translation.projects')}</li></Link>
           <Link to='/certificates'><li className="menu-items">{t('translation.certificates')}</li></Link>
           <Link to='/about-me'><li className="menu-items">{t('translation.about-me')}</li></Link>
+          <Link to='/contact-us'><li className="menu-items">{t('translation.contactus')}</li></Link>
           <li className="menu-items cv notranslate">
               <div className="item-link-btn-menu"><a href="https://drive.google.com/file/d/1Hx_BCott-nk_QLFOBOh375tFQFeL_i69/view?usp=sharing" target="_blank">Es</a><a href="https://drive.google.com/file/d/1ab3cC-TSm-xnWbTgAQ0FB9VvKR6VSZ5a/view?usp=sharing" target="_back">En</a></div>
               <div className="item-link-cv-menu">{t('translation.curriculum')}</div>
