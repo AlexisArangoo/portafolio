@@ -22,6 +22,8 @@ const ContactUs = () => {
       e.target.elements['message'].value = ''
   }
 
+  
+
   return (
     <div className={`contactus ${onDark ? 'ondark' : ''}`}>
       <form className="form" onSubmit={submit}>

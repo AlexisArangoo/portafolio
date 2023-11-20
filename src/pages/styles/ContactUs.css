@@ -26,6 +26,12 @@
     color: #fff;
     border: 1px solid #333;
   }
+
+  .contactus.ondark .form{
+    background-color: #8e9191;
+    border-color: transparent;
+    box-shadow: 0 0 1em #0009;
+  }
   
   .title {
     font-size: 28px;
@@ -65,6 +71,11 @@
     font-size: 14.5px;
     color: rgba(255, 255, 255, 0.7);
   }
+
+  .contactus.ondark .message{
+    color: #243c8b;
+  }
+  
   
   .signin {
     text-align: center;
@@ -97,6 +108,11 @@
     border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 10px;
   }
+
+  .contactus.ondark .form label .input {
+    background-color: #fff8;
+    
+  }
   
   .form label .input + span {
     color: rgba(255, 255, 255, 0.5);
@@ -106,6 +122,10 @@
     font-size: 0.9em;
     cursor: text;
     transition: 0.3s ease;
+  }
+
+  .contactus.ondark .form label .input + span{
+    color: #243c8b;
   }
   
   .form label .input:placeholder-shown + span {

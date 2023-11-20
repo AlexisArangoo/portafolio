@@ -1,3 +1,5 @@
+
+
 .header{
     position: fixed;
     top: 0;
@@ -10,7 +12,7 @@
     background: linear-gradient( #000, #2a365c);
     border-radius: 0 0.5em 0.5em 0;
     overflow: hidden;
-    transition: 400ms ease;
+    transition: 200ms ease;
     z-index: 3;
 }
 
@@ -19,6 +21,7 @@
 }
 
 .header:hover{
+    overflow: visible;
     width: 230px;
 }
 
@@ -73,6 +76,14 @@
     flex-direction: column; 
 }
 
+.header:hover .header-list{
+    gap: 1.5em;
+}
+
+.header-item{
+    position: relative;
+}
+
 .item-link{
     display: flex;
     align-items: center;
@@ -81,14 +92,47 @@
     font-size: 0.9em;
     color: #fff;
     text-decoration: none;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 4% 50%);
+    border-radius: 0 0.3em 0.05em 0;
 }
+
+.item-link_dobles{
+    position: absolute;
+    right: -36px;
+    bottom: 9px;
+    width: 36px;
+    height: 20px;
+    background-color: #06080f;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.item-link h2{
+    visibility: hidden;
+}
+
+.header:hover .item-link{
+    position: relative;
+    left: 2.5em;
+    bottom: 2em;
+    background-color: #535b77;
+}
+
+.header:hover .item-link h2{
+    visibility: visible;
+}
+
 .header.ondark .item-link{
     color: #000;
 }
 
 .item-link:hover{
-    background-color: #0005;
-    color: #aaa;
+    transform: scale(1.1);
+    color: #000;
+}
+.item-link:hover + .item-link_dobles{
+    width: 46px;
+    bottom: 6px;
+    right: -46px;
 }
 
 .item-link-curriculum{
@@ -96,9 +140,14 @@
 }
 
 .item-link-cv{
+    visibility: hidden;
     font-size: 1.3rem;
     font-weight: 800;
     color: inherit;
+}
+
+.header:hover .item-link-cv{
+    visibility: visible;
 }
 
 .item-link-btn{
@@ -160,7 +209,6 @@
 }
 
 .header.ondark .item-link:hover{
-    background-color: #0005;
     color: #fff;
 }
 
@@ -306,9 +354,7 @@ hr{
     color: #fff;
 }
 
-.header.ondark .menu-items{
-    color: #000;
-}
+
 
 @media screen and (max-width: 900px) {
     .header{
@@ -360,3 +406,4 @@ hr{
     }
 
 }
+

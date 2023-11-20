@@ -34,18 +34,21 @@ const NavBar = ({isChecked, setIsChecked}) => {
               <i className="bx bx-clipboard"></i>
               <h2>{t('translation.projects')}</h2>
             </Link>
+            <div className="item-link_dobles"></div>
           </li>
           <li className="header-item">
             <Link to="/certificates" className="item-link">
               <i className="bx bxs-graduation"></i>
               <h2>{t('translation.certificates')}</h2>
             </Link>
+            <div className="item-link_dobles"></div>
           </li>
           <li className="header-item">
             <Link to="/contact-us" className="item-link">
               <i className='bx bxs-book-content'></i>
               <h2>{t('translation.contactus')}</h2>
             </Link>
+            <div className="item-link_dobles"></div>
           </li>
           <li className="header-item">
             <div className="item-link cv">
@@ -55,6 +58,7 @@ const NavBar = ({isChecked, setIsChecked}) => {
                 <div className="item-link-cv">{t('translation.curriculum')}</div>
               </div>
             </div>
+            <div className="item-link_dobles"></div>
           </li>
         </ul>
       </div>
