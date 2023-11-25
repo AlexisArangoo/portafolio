@@ -405,5 +405,12 @@ hr{
         visibility: visible;
     }
 
+    .header:hover .item-link-cv{
+        visibility: hidden;
+    }
+
+    .header:hover .item-link h2{
+        visibility: hidden;
+    }
 }
 
