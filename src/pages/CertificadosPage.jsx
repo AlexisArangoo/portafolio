@@ -7,15 +7,25 @@ const CertificadosPage = () => {
 
   return (
     <article className={`certificados ${onDark ? 'ondark' : ''}`}>
-      <section className="fundamentos">
-        <h2>FUNDAMENTOS</h2>
-        <img src="/certificados/fundamentos.jpg" alt="" />
+      <section className="certificados-section">
+        <h2 className='notranslate'>FULL STACK</h2>
+        <img src="/certificados/fullstack.png" alt="" />
       </section>
-      
-      <section className="react">
-        <h2 className='notranslate'>REACT</h2>
+
+      <section className="certificados-section">
+        <h2 className='notranslate'>FRONT-END</h2>
         <img src="/certificados/react.png" alt="" />
       </section>
+     
+      <section className="certificados-section">
+        <h2 className='notranslate'>BACK-END</h2>
+        <img src="/certificados/backend.png" alt="" />
+      </section> 
+
+      <section className="certificados-section">
+        <h2>FUNDAMENTOS</h2>
+        <img src="/certificados/fundamentos.jpg" alt="" />
+      </section> 
     </article>
   )
 }

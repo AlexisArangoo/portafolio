@@ -14,13 +14,7 @@
     background: url('/public/images/tema-dark.jpg') center center fixed;
 }
 
-.fundamentos img{
-    width: 100%;
-    max-width: 800px;
-    border-radius: 0.5em;
-}
-
-.react img{
+.certificados-section img{
     width: 100%;
     max-width: 800px;
     border-radius: 0.5em;
