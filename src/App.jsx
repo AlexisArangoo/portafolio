@@ -11,6 +11,13 @@ import { useState } from 'react'
 import ContactUs from './pages/ContactUs'
 
 function App() {
+  const [cursorX, setCursorX] = useState()
+  const [cursorY, setCursorY] = useState()
+
+  window.addEventListener('mousemove', (e) => {
+    setCursorX(e.pageX)
+    setCursorY(e.pageY)
+  })
 
   const [isChecked, setIsChecked] = useState(false);
 
@@ -30,6 +37,11 @@ function App() {
 
   return (
     <div className='body'>
+
+      <div className="cursor" style={{
+        left: (cursorX + 18) + 'px',
+        top: (cursorY + 18) + 'px'
+      }}></div>
       
       <NavBar 
       isChecked={isChecked}

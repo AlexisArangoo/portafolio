@@ -32,3 +32,17 @@ a{
     text-decoration: none;
     color: black;
 }
+
+*::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #1f2341;
+    border-radius: 0.2em;
+    border: 2px solid #fff5;
+}
+  
+*::-webkit-scrollbar:vertical {
+    width: 11px;
+}
