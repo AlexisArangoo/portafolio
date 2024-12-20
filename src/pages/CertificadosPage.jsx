@@ -12,7 +12,7 @@ const CertificadosPage = () => {
         initial={{opacity: 0.5, x:'-90%'}}
         whileInView={{opacity: 1, x:0}}
         transition={{ duration: 0.5 }}
-        viewport={{amount: 0.3 }}
+        viewport={{amount: 0.15 }}
       >
         <h2 className='notranslate certificados_title'>FULL STACK</h2>
         <img src="/certificados/fullstack.png" alt="" />
@@ -22,7 +22,7 @@ const CertificadosPage = () => {
         initial={{opacity: 0.5, x:'-90%'}}
         whileInView={{opacity: 1, x:0}}
         transition={{ duration: 0.5 }}
-        viewport={{amount: 0.3 }}
+        viewport={{amount: 0.15 }}
       >
         <h2 className='notranslate certificados_title'>FRONT-END</h2>
         <img src="/certificados/react.png" alt="" />
@@ -32,7 +32,7 @@ const CertificadosPage = () => {
         initial={{opacity: 0.5, x:'-90%'}}
         whileInView={{opacity: 1, x:0}}
         transition={{ duration: 0.5 }}
-        viewport={{amount: 0.3 }}
+        viewport={{amount: 0.15 }}
       >
         <h2 className='notranslate certificados_title'>BACK-END</h2>
         <img src="/certificados/backend.png" alt="" />
@@ -42,7 +42,7 @@ const CertificadosPage = () => {
         initial={{opacity: 0.5, x:'-90%'}}
         whileInView={{opacity: 1, x:0}}
         transition={{ duration: 0.5 }}
-        viewport={{amount: 0.3 }}
+        viewport={{amount: 0.15 }}
       >
         <h2 className=' certificados_title'>FUNDAMENTOS</h2>
         <img src="/certificados/fundamentos.jpg" alt="" />
