@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import './styles/CertificadosPage.css'
+import { motion } from 'framer-motion'
 
 const CertificadosPage = () => {
 
@@ -7,25 +8,45 @@ const CertificadosPage = () => {
 
   return (
     <article className={`certificados ${onDark ? 'ondark' : ''}`}>
-      <section className="certificados-section">
-        <h2 className='notranslate'>FULL STACK</h2>
+      <motion.section className="certificados-section ci"
+        initial={{opacity: 0.5, x:-600}}
+        whileInView={{opacity: 1, x:0}}
+        transition={{ duration: 0.5 }}
+        viewport={{amount: 0.5 }}
+      >
+        <h2 className='notranslate certificados_title'>FULL STACK</h2>
         <img src="/certificados/fullstack.png" alt="" />
-      </section>
+      </motion.section>
 
-      <section className="certificados-section">
-        <h2 className='notranslate'>FRONT-END</h2>
+      <motion.section className="certificados-section cd"
+        initial={{opacity: 0.5, x:-600}}
+        whileInView={{opacity: 1, x:0}}
+        transition={{ duration: 0.5 }}
+        viewport={{amount: 0.5 }}
+      >
+        <h2 className='notranslate certificados_title'>FRONT-END</h2>
         <img src="/certificados/react.png" alt="" />
-      </section>
+      </motion.section>
      
-      <section className="certificados-section">
-        <h2 className='notranslate'>BACK-END</h2>
+      <motion.section className="certificados-section ci"
+        initial={{opacity: 0.5, x:-600}}
+        whileInView={{opacity: 1, x:0}}
+        transition={{ duration: 0.5 }}
+        viewport={{amount: 0.5 }}
+      >
+        <h2 className='notranslate certificados_title'>BACK-END</h2>
         <img src="/certificados/backend.png" alt="" />
-      </section> 
+      </motion.section> 
 
-      <section className="certificados-section">
-        <h2>FUNDAMENTOS</h2>
+      <motion.section className="certificados-section cd"
+        initial={{opacity: 0.5, x:-600}}
+        whileInView={{opacity: 1, x:0}}
+        transition={{ duration: 0.5 }}
+        viewport={{amount: 0.5 }}
+      >
+        <h2 className=' certificados_title'>FUNDAMENTOS</h2>
         <img src="/certificados/fundamentos.jpg" alt="" />
-      </section> 
+      </motion.section> 
     </article>
   )
 }

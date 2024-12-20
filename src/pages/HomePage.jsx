@@ -4,6 +4,7 @@ import "./styles/HomePage.css";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   const [t] = useTranslation("global");
@@ -21,7 +22,15 @@ const HomePage = () => {
     <div className={`home ${onDark ? "ondark" : ""}`}>
       <div className="foto-perfil">
         <Link to="/about-me">
-          <img src={`/images/logo_${onDark ? "black" : "white"}.png`} alt="" />
+          <motion.img
+          initial={{y: 0}} 
+          animate={{y: [0,-20, 0]}}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          src={`/images/logo_${onDark ? "black" : "white"}.png`} alt="" />
         </Link>
       </div>
       <div className="container-bibliografia">

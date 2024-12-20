@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 import './styles/AboutMe.css'
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const AboutMe = () => {
 
@@ -18,9 +19,17 @@ const AboutMe = () => {
         <div className="aboutme_container-biografia">
 
             <Link to='/'>
-              <div className='aboutme_container-img'>
+              <motion.div className='aboutme_container-img'
+              initial={{y: 0}} 
+              animate={{y: [0,-10, 0]}}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              >
                 <img src={`/images/logo_${onDark ? 'black' : 'white'}.png`} alt="" />
-              </div>
+              </motion.div>
             </Link>
 
             <p className="aboutme_biografia">
