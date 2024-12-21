@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './styles/RickMorty.css'
 import { useTranslation } from 'react-i18next'
 const RickMorty = ({setOnInterval}) => {
-
+ 
   const [ t ] = useTranslation('global')
 
   const [ondescription, setOndescription] = useState(false)

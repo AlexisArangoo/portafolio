@@ -6,6 +6,7 @@ import RickMorty from '../Components/ProyectosPage/RickMorty'
 import { useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 import Pokemon from '../Components/ProyectosPage/Pokemon'
+import EcommerceReact from '../Components/ProyectosPage/EcommerceReact'
 
 
 const ProyectosPage = () => {
@@ -33,14 +34,15 @@ const ProyectosPage = () => {
     if (currentPro > 1) {
       setCurrentPro( currentPro - 1)
     }else (
-      setCurrentPro(4)
+      setCurrentPro(5)
     )
 
     setOnInterval(false)
    }
+   
 
   const handleNext = () => { 
-    if (currentPro < 4) {
+    if (currentPro < 5) {
       setCurrentPro(currentPro + 1)
     } else (
       setCurrentPro(1)
@@ -60,14 +62,15 @@ const ProyectosPage = () => {
       <div className='cont-proyectos'>
       <article className='proyectos' onMouseEnter={() => {setOnCard(true); setOnInterval(false)}} onMouseLeave={() => {setOnCard(false); setOnInterval(true)}}>
 
-        
-          {currentPro === 1 ? <Pokemon setOnInterval={setOnInterval}/> : null}
+          {currentPro === 1 ? <EcommerceReact setOnInterval={setOnInterval}/> : null}
+
+          {currentPro === 2 ? <Pokemon setOnInterval={setOnInterval}/> : null}
           
-          {currentPro === 2 ?<RickMorty setOnInterval={setOnInterval}/> : null}
+          {currentPro === 3 ?<RickMorty setOnInterval={setOnInterval}/> : null}
           
-          {currentPro === 3 ?<ApiClima setOnInterval={setOnInterval}/> : null}
+          {currentPro === 4 ?<ApiClima setOnInterval={setOnInterval}/> : null}
           
-          {currentPro === 4
+          {currentPro === 5
             ?<EcommerVanilla 
             setOnInterval={setOnInterval}
             handlePrevious={handlePrevious}

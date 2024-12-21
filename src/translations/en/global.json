@@ -10,6 +10,7 @@
         "description-rick": "This page contains the residents of the Ryck and Morty series, in this we can search for them with the ID of their locality or with the name of their locality, this page was developed with React and Css, all the cards are functional and this is the total description of their respective resident.",
         "description-clima": "On this page you can search for the weather of almost any part of the world with the name of the city, when you start the session it will indicate the weather of your location, this page was developed with React and Css.",
         "description-pokemon": "On this page you can find each of the pokemon species, where each card is its detailed description, the page is fully functional where they are filtered by name or type, this page is designed for all pokemon fans and is developed with REACT and CSS.",
+        "description-ecommerce_react": "This is a very complete ecommerce where you can add your favorite products to the shopping cart, also, each of the purchases you make is recorded and you can search for the products by different filters and categories. In order to make your purchases you must have a registered account.",
         "demo": "See Demo",
 
         "home": "Home",

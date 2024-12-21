@@ -9,7 +9,8 @@
         "description-ecommerce": "Este es un e-commerce que fue desarrollado en vanilla (código puro: Html, Css, js) la página es completamente funcional, puedes acceder al carrito de compras, aplicar códigos de descuento y buscar el producto por nombre.",
         "description-rick": "Esta pagina contiene a los residentes de la serie Ryck and Morty, en esta podemos buscarlos con el ID de su localidad o con el nombre de su localidad, esta pagina fue desarrollada con React y Css, todas las tarjetas son funcionales y esto es la descripción total de su respectivo residente.",
         "description-clima": "En esta página puedes buscar el clima de casi cualquier parte del mundo con el nombre de la ciudad, al iniciar la sesión te indicará el clima de tu ubicación, esta página fue desarrollada con React y Css.",
-        "descripción-pokemon": "En esta pagina podras encontrar cada una de las especies de pokemon, donde en cada tarjeta esta su descripcion detallada, la pagina es totalmente funcional donde se filtran por nombres o por su tipo, esta pagina esta diseñada para todos los fan de pokemon y esta desarrollada con REACT y Css.",
+        "description-pokemon": "En esta pagina podras encontrar cada una de las especies de pokemon, donde en cada tarjeta esta su descripcion detallada, la pagina es totalmente funcional donde se filtran por nombres o por su tipo, esta pagina esta diseñada para todos los fan de pokemon y esta desarrollada con REACT y Css.",
+        "description-ecommerce_react": "Este es un ecommerce muy completo donde podras añadir tus productos favoritos al carrito de compras, tambien, queda registrada cada una de las compras que realices y puedes buscar los productos por diferentes filtros y categorias. Para poder hacer tus compras debes tener una cuenta registrada.",
         "demo": "Ver Demostración",
 
         "home": "Inicio",
